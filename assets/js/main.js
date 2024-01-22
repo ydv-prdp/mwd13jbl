@@ -34,7 +34,17 @@ const blurHeader = () =>{
 window.addEventListener('scroll',blurHeader)
 
 /*=============== SWIPER FAVORITES ===============*/ 
-
+let swiper = new Swiper('.favorite__swiper',{
+    loop:true,
+    slidesPerView:'auto',
+    centeredSlides:'auto',
+    grabCursor:true,
+    breakPoints:{
+        768:{
+            slidesPerView:3,
+        }
+    }
+})
 
 /*=============== SHOW SCROLL UP ===============*/ 
 
