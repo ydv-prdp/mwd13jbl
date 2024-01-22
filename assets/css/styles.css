@@ -580,10 +580,26 @@ img {
   background-color: hsl(23, 4%, 40%);
 }
 /*=============== SCROLL UP ===============*/
-
-
+.scrollup{
+  position: fixed;
+  right: 1rem;
+  bottom: -50%;
+  background: var(--gradient-color);
+  display: inline-flex;
+  color: var(--white-color);
+  font-size: 1.25rem;
+  padding: 6px;
+  border-radius: 0.25rem;
+  z-index: var(--z-tooltip);
+  transition: bottom 0.4s, transform 0.4s;
+}
+.scrollup:hover{
+  transform: translateY(-.5rem);
+}
 /* Show Scroll Up */
-
+.show-scroll{
+  bottom: 3rem;
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
