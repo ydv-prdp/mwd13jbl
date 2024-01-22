@@ -447,7 +447,22 @@ img {
   justify-self: center;
 }
 /*=============== SPONSOR ===============*/
+.sponsor__img{
+  width: 100px;
+  transition: transform 0.4s;
+}
 
+.sponsor__img:hover{
+  transform: scale(1.1);
+}
+
+.sponsor__container{
+  padding-block: .5rem 4.5rem;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+  align-items: center;
+  gap: 5rem 4rem;
+}
 
 /*=============== FOOTER ===============*/
 
